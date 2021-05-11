@@ -1,3 +1,4 @@
+import 'package:badge/badge.dart';
 import 'package:flutter/material.dart';
 
 class ExamplePage extends StatelessWidget {
@@ -8,8 +9,13 @@ class ExamplePage extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
-          child: Column(
-            children: [],
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: [
+                Badge(text: "Flutter"),
+              ],
+            ),
           ),
         ),
       ),
